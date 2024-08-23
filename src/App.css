@@ -1,0 +1,87 @@
+body {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+header {
+  margin-top: 67px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1110px;
+  margin-inline: auto;
+  p {
+    color: rgba(21, 41, 56, 1);
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+  button {
+    padding-inline: 24px;
+    padding-block: 14px;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.8px;
+    text-align: center;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+}
+
+.rs {
+  background-color: #fda214;
+  color: #fcfcfc;
+}
+
+.rs:hover {
+  background-color: #ffb84a;
+}
+
+.ng {
+  background-color: #dfe7ec;
+  color: #304859;
+}
+.ng:hover {
+  background-color: #6395b8;
+  color: #dfe7ec;
+}
+
+.container {
+  margin-top: 85px;
+  width: 572px;
+  height: 572px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin-bottom: 80px;
+}
+
+.dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #304859;
+  padding: 8px;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  span {
+    visibility: hidden;
+  }
+}
+
+.selected {
+  background-color: #bcced9;
+}
+
+.matched {
+  background-color: #fda214;
+}
+
+:is(.selected, .matched) span {
+  visibility: visible;
+}
